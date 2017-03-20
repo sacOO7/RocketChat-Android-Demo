@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp">
+
+    <io.rocket.chat.Layouts.ChatLayout
+        android:layout_width="wrap_content"
+        android:background="@drawable/balloon_incoming_normal"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/chat_company_reply_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/chat_company_reply_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="8dp"
+                android:paddingTop="5dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_blue_light"
+                android:text="User1"
+                android:textSize="16sp" />
+
+            <hani.momanii.supernova_emoji_library.Helper.EmojiconTextView
+                android:id="@+id/message_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                style="@style/chat_text_message_style"
+                android:paddingLeft="20dp"
+                android:autoLink="web"
+                android:maxWidth="280dp"
+                android:text="Rahul Agrawal is a good boy but he does not know what he wants." />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/time_text"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignBottom="@id/chat_company_reply_text"
+            android:layout_marginLeft="10dp"
+            style="@style/chat_timings"
+            android:paddingRight="10dp"
+            android:textColor="@android:color/darker_gray"
+            android:paddingBottom="5dp"
+            android:layout_toRightOf="@id/chat_company_reply_text"
+            android:text="17:10" />
+
+    </io.rocket.chat.Layouts.ChatLayout>
+
+</RelativeLayout>
