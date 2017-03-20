@@ -4,4 +4,4 @@ This is a simple rocket-chat demo built using basic native java SDK and Android.
 
 ## Demo 
 --------
-<img src="" align="center" alt="Android chat" width="320px" height="560px"/>
+<img src="https://github.com/sacOO7/RocketChat-Android-Demo/blob/master/demo.gif" align="center" alt="Android chat" width="320px" height="560px"/>
